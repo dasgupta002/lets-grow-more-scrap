@@ -19,7 +19,7 @@ function App() {
     <>
       <Navbar bg="dark">
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand>
             <img src = "/assets/logo.svg" width = "60" height = "60" className = "d-inline-block align-top" alt = "brand-logo" />
           </Navbar.Brand>
           <Button variant = "warning" onClick = { fetchUsers }>Fetch Data</Button>
