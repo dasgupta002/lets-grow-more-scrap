@@ -28,9 +28,9 @@ function App() {
 
       {
         !loading ? null
-                : <Container className = "d-flex justify-content-center align-items-center" style = {{ height: "80vh" }}>
+                 : <Container className = "d-flex justify-content-center align-items-center" style = {{ height: '80vh' }}>
                     <Loader type = "Bar" color = "purple" height = {100} width = {100} />
-                  </Container>  
+                   </Container>  
       }
 
       <Container>
