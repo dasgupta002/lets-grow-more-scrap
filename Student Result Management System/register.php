@@ -42,7 +42,7 @@
                   if(status == "200") {
                       error = "<span class = 'alert alert-danger mx-5 mt-5'>Teacher registered. Try logging in!</span>";
                       reference.innerHTML = error;
-                      window.location.href = "/";
+                      window.location.href = "index.php";
                   } else if(status == "500") {
                       error = "<span class = 'alert alert-danger mx-5 mt-5'>Duplicate record. Try a new one!</span>";
                       reference.innerHTML = error;
