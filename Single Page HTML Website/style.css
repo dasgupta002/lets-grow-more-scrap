@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Itim', cursive;
+}
+
+section {
+    margin-bottom: -4px;
+}
+
+.hero {
+    background-image: url('assets/light.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding: 60px;
+}
+
+.hero > nav {
+    background-color: yellowgreen;
+    padding: 11px;
+    width: 60vw;
+    border-radius: 22px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.hero > nav > a {
+    text-decoration: none;
+}
+
+.hero > nav > a:hover {
+    background-color: seagreen;
+    width: 20%;
+    text-align: center;
+    padding: 5px;
+    border-radius: 22px;
+}
+
+.hero > p {
+    text-align: justify;
+    width: 46vw;
+    margin-top: 137px;
+    padding: 50px;
+    color: white;
+    float: right;
+}
+
+.about {
+    background-color: wheat;
+    padding: 36px;
+    display: flex;
+}
+
+.about > p {
+    text-align: justify;
+    width: 80%;
+    margin-right: 33px;
+}
+
+.about > img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;    
+}
+
+.services {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 6px;
+    padding: 40px;
+    background-color: #d8bfd8;
+}
+
+.services > div {
+    background-color: #fff5ee;
+    padding: 13px;
+    border-radius: 18px;
+    text-align: center;
+}
+
+.services > div > img {
+    height: 100px;
+    width: 100px;
+}
+
+.carousel > img {
+    height: 50vh;
+    width: 100%;
+}
+
+.customers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 11px;
+    padding: 40px;
+    background-color: #d8bfd8;
+}
+
+.customers > div {
+    background-color: #fff5ee;
+    padding: 33px;
+    border-radius: 18px;
+}
+
+.customers > div > img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    float: right;
+    margin-left: 11px;
+}
+
+.customers > div > p {
+    text-align: justify;
+}
+
+.map > iframe {
+    height: 50vh;
+    width: 100%;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 100px;
+    padding: 60px;
+    background-color: #d8bfd8;
+}
+
+.contact > img {
+    width: 100%;
+    height: 80%;
+    border-radius: 22px;
+    transform: rotate(-5deg);
+}
+
+.contact > form >  input {
+    display: block;
+    padding: 11px;
+    width: 80%;
+    border-radius: 22px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.contact > form > input:focus {
+    outline: none;
+}
+
+.contact > form > textarea {
+    display: block;
+    padding: 11px;
+    width: 80%;
+    border-radius: 22px;
+    margin-top: 18px;
+}
+
+.contact > form > textarea:focus {
+    outline: none;
+}
+
+.video > iframe {
+    height: 50vh;
+    width: 100%;
+    margin-bottom: -4px;
+}
+
+.newsletter {
+    background-color: #d8bfd8;
+    text-align: center;
+    padding: 60px;
+}
+
+.newsletter > input {
+    padding: 13px;
+    width: 50vw;
+    border-radius: 40px;
+}
+
+.newsletter > input:focus {
+    outline: none;
+}
+
+.newsletter > button {
+    background-color: tomato;
+    padding: 12px;
+    margin-left: -44px;
+    font-family: inherit;
+    font-size: large;
+    border-radius: 30px;
+}
+
+.quote {
+    background: #003F5B;
+    margin-bottom: -16px;
+    margin-top: -100px;
+}
+
+.quote > blockquote {
+    width: 640px;
+    height: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.quote > blockquote > p {
+    font-size: 66px;
+    padding: 20px;
+    color: #FFF;
+}
+
+.quote > div {
+    background: #000;
+    width: 500px;
+    height: 700px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -660px;
+}
+
+.footer {
+    background-color: wheat;
+    padding: 22px;
+    text-align: center;
+    font-size: larger;
+}
+
+@media screen and (max-width: 720px) {
+    .hero {
+        height: 60vh;
+        padding: 30px;
+    }
+    .hero > nav {
+        width: 80vw;
+    }
+
+    .hero > p {
+        display: none;
+    }
+
+    .services {
+        display: block;
+    }
+    
+    .services > div {
+        margin-bottom: 11px;
+    }
+
+    .customers {
+        display: block;
+    }
+    
+    .customers > div {
+        margin-bottom: 11px;
+    }
+
+    .contact {
+        display: block;
+    }
+    
+    .contact > img {
+        display: none;
+    }   
+    
+    .quote {
+        display: none;
+    }
+}
